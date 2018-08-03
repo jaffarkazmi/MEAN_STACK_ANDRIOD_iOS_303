@@ -1,0 +1,280 @@
+.<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+       ///      FUNCTIONS   ///////////
+     //////// ========== q1 ========================
+    function block_code (params) {
+    
+        console.log("Q1 ");
+        console.log("this block can be used several times");
+        
+    }
+    block_code();
+    
+/////////////////////=========== q2 ======================
+
+function current_time(params) {
+    console.log("Q2 ");
+    var d = new Date().getFullYear();
+    console.log(d);
+    
+}
+current_time();
+
+/////////////////////=========== q2 ======================
+function fullname(a ,b) {
+    console.log("Q3 ");
+  //  var a = fname;
+    //var b = lname;
+    console.log("hello "+ a+b);
+    //console.log("hello ");
+    
+}
+fullname("syed", "jaffar");
+
+///////////////////=========== q4 ======================
+
+function addnums(a , b) {
+    console.log("Q4 ");
+  var d= a+b;
+    console.log("Two numbers are = "+a +"," +b );
+    console.log("sum is " +d);
+    
+}
+addnums(2,3);
+
+///////////////////=========== q5 ======================
+
+function calc (n1 , n2, opr) {
+    console.log("Q5  Calculator ");
+    var result;
+console.log("numbers and operation entered = " +n1 +" " +n2 + " " +opr);
+   // var a=opr;
+    switch(opr)
+    {
+        case "+" :     result=n1+n2;  console.log("result is " +result);
+        break; 
+        
+        case "-" :     result=n1+n2;  console.log("result is" +result);
+        break;
+        
+        case "*" :     result=n1+n2;  console.log("result is" +result);
+        break;
+
+        case "/" :     result=n1+n2;  console.log("result is" +result);
+        break;
+
+        default: console.log("error");
+    }
+    
+    
+}
+calc(1,2,"+");
+    ///////////////////=========== q6 ======================
+    function sq(n1) {
+        var d= n1*n1;
+        console.log("Q6 ");
+        console.log("number is " +n1);
+        console.log("square is " +d);
+    }
+    sq(3);
+ ///////////////////=========== q7 ======================
+ console.log(" Q7 ");
+ function fac(n1) {
+        var d= n1;
+        var resl=n1 ,i;
+        
+        var v=0;
+        
+        
+        for(i=1; i<n1 ; i++) 
+        {
+            d--;
+          v=resl*d;
+          resl=v;
+         // console.log("number is "+ v);
+        }
+        console.log(" number is " +n1);
+        console.log(" factorial is " +resl);
+
+    }
+    fac(5);
+
+
+
+    ///////////////////=========== q9 ======================
+    
+    function Hypt(per, base) {
+        console.log("Q9 nested loop ");
+        var hyp;
+        
+        function square() {
+           
+           return per*per + base*base;
+        }
+        hyp = square();
+        console.log(hyp);
+    }
+    Hypt(2,3);
+
+///////////////////=========== q11 ======================
+    
+function larg() {
+        console.log("Q11 largest number any arguments ");
+        for(var i=0 ; i<= arguments.length ; i++)
+        {
+            if (arguments[i] < arguments[i+1])
+            
+                var larg = arguments[i+1];
+            
+        }
+        console.log(larg);
+}
+    larg(1,2,6,9,10,11);
+    
+    ///////////////////=========== q14 ======================
+    
+function sum( x ) {
+        console.log("Q14 array sum ");
+        var s=0;
+        for(var i =0; i<x.length; i++){
+            s += x[i];
+        }
+        console.log(s) ;
+}
+var x = [ 2 ,3,5,6,7 ];
+sum(x);
+
+ ///////////////////=========== q16 ======================
+    
+ function pow( x,a ) {
+        console.log("Q16 power ");
+        console.log(" 5 power 2 =");
+        var num=x;
+  for(var i=1; i<a; i++ )
+  {
+     num= num*x;
+  }
+  
+  console.log(num);
+ }
+pow(5,2);
+
+
+///////////////////=========== q17 ======================
+    
+function ran( ) {
+        console.log("Q17 random ");
+    var x= Math.floor((Math.random() * 6 ) + 1);
+    console.log(x);
+    }
+    ran();
+///////////////////=========== q18 ======================
+    
+function rev( b ) {
+        console.log("Q18 reverse ");
+        //var a=[] 
+    //   //  for(var j = 0; b<0 ; b++)
+    //     {
+    //         //a[i]=b[j];
+    //         console.log(  b[j] );
+    //         console.log( "jjbv" );
+    //     }
+
+        console.log(b[4]);
+        console.log(  b[3] );
+        console.log(  b[2] );
+        console.log(  b[1] );
+        console.log(  b[0] );
+    
+    }
+    var a=[3,4,5,6,9]
+rev(a);
+
+function pallindrome( str ) {
+        console.log("======   Q19 Palindrome ====");
+       // console.log(" 111" + str[0] );
+ var tem = str.length-1;
+ console.log("THE word is " +str1);
+ var count=0;
+ //console.log(tem);
+  for(var i=0; i<4; i++)
+  {
+       
+          if (str[i]==str[tem])
+        {
+          //  console.log("palindrome");
+        }
+    else
+   { // console.log("not palindrome");
+     count++;
+   }
+   tem--;  
+      
+ }   
+  if (count>0)
+  {
+      console.log("not palindrome");  }
+      else console.log("palindrome"); 
+    }
+var str1="CARAC";
+pallindrome( str1 );
+
+function uppercase(str)
+{
+    console.log("======   Q22 Lower to upper case ====");
+  var array1 = str.split(' ');
+  var newarray1 = [];
+    
+  for(var x = 0; x < array1.length; x++){
+      newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+  }
+  return newarray1;
+}
+console.log(uppercase("the quick brown fox"));
+
+function age_cal(y) {
+
+console.log("======   Q26 AGE CALCULATAR ====");
+var d = new Date().getFullYear();
+console.log("your birth year = "+y);
+var k = d-y;
+console.log("your age = "+k);
+}
+age_cal(1996);
+
+function calculate_supply(a, s) {
+    console.log("======   Q27 TOTAL SUPPLY CALCULATOR ====");
+    console.log("age= "+a+ " " +"daily supply = "+ s+ " MAX AGE IS = 50" );
+    var max_age= 50;
+    var rem_age = max_age-a;
+    s=s*360;
+    var total =rem_age*s
+    
+    
+   // console.log(Math.round(Number(1.5)));
+    console.log(" TOTAL SUPPLY NEEDED" +total);
+}
+calculate_supply(10, 2.5 )
+
+function calculate_AREA(a, s) {
+    console.log("======   Q12 AREA TRIANGLE ====");
+    console.log("sides is "+a +"and height is "+s);
+    var area;
+return area =a*s;
+}
+console.log(calculate_AREA(10 , 6));
+    </script>
+
+    
+</body>
+</html>
