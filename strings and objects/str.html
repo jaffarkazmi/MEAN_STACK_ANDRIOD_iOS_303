@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    console.log("========================strings practice===================")
+    
+    var str = "jaffar";
+    var str2 = "kazmi";
+    console.log(str);
+    console.log(" first letter using charAt "+str.charAt(0));
+    console.log("concatinated " +str.concat(str2));
+    var index = str.indexOf("far");
+    console.log("index from word 'far' "+ ""+"is " + index); 
+    var index1 = str.lastIndexOf("r");
+    console.log("last index of letter 'r' "+ ""+"is " + index1); 
+    var str3 = "jaffar";
+    var index3 = str.localeCompare(str3); 
+    console.log(index3);
+    // var mat = /ff/j;
+    // var e=str.match(mat);
+
+    
+   // console.log(e);
+   // var str4 = "jaffar kazmi 96 gmail"; 
+   // var res = str4.match(/ar/az/a//g);
+    //console.log(res);
+
+    /////////////// ARRRAYS///////////////////////////////
+ 
+
+ var a= [];
+a.push(1,2,3,4 ,9,6,0);
+console.log(a);
+
+var sort = a.sort();
+console.log("sorted array is "+a);
+a.unshift(200);
+console.log(a);
+
+console.log(a.reverse());
+
+var sli;
+console.log("sliced array:" + a.slice(1,4));
+// var sort = a.sort();
+// console.log("sorted array is "+a);
+var ar = [ 1 , "def" , 3];
+var ac=ar.toString();           
+
+console.log(ac);
+console.log(ar);
+
+
+var arr=[ [1,1] ,[1,2] , [1,3], [2,1]];
+
+         var suffix = "tree";
+         var tree = [ 'banana' , "ELM"+suffix];
+
+
+         console.log(tree);
+        //  for(var i =0 ; i<arr.length; i++)
+        //  { 
+        //      for (var j=0; j<arr.length; j++)
+        //      {
+        //         console.log(arr[i,j]);
+        //      }
+        //      break;
+        //  }
+         
+         console.log(arr[0,0]);
+         console.log(arr[0,1]);
+         console.log(arr[0]);
+var array2 = [[1,{x:1, y:2}], [2, {x:3, y:4}]];
+console.log(array2[4 ,1]);
+
+//array.splice(index, howMany, [element1][, ..., elementN]);
+
+
+var arr = ["orange", "mango", "banana", "sugar", "tea"];
+        
+        var removed = arr.splice(2,  "water");
+
+        console.log("After adding: " + arr );
+
+    </script>
+    
+
+</body>
+</html>

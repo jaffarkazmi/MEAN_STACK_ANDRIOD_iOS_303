@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+    
+    var car = {
+ 
+        company : " " , color : " " , year : 0 
+    
+  
+    
+    };
+    function Car (com , col ,yea) {          ///     constructor
+        this.company = com ;
+        this.color=col;
+        this.year=yea;
+        this.details = function(){
+            return this.company +" " +this.color+ " " +this.year;
+        } 
+ 
+} 
+car.bmw ={                                      // object types   
+    topspeed : 1000,
+    seats :4,
+    gears: 5
+    
+};
+  
+  car.suzuki ={
+      topspeed :500 ,
+      seats:8,
+      gears: 4
+    
+  };
+
+    var car1 = new Car( "SUZUKI" , "BLUE " ,1999 ); ////// object creation
+    
+    console.log(car1.details());
+    
+    
+    if(car1.company =="BMW" ){
+        console.log(car.bmw);
+
+    }else if (car1.company =="SUZUKI" )
+    console.log(car.suzuki);
+
+    else
+    console.log("invalid");
+    
+    
+    
+    </script>
+</body>
+</html>

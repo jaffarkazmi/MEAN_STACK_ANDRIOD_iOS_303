@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+console.log("=========================objects practice=================")
+var rect = {
+    width :10,
+    height :20
+}
+rect.color={
+
+red:0, green:123
+}
+
+rect.geta = function name(params) 
+{
+return this.width*this.height;    
+};
+
+console.log(rect.color.red);
+console.log(rect.geta());
+
+function book(num) {
+    this.num=num;
+  return num;
+} 
+
+var book = new book(99);
+console.log(book);
+  
+  
+  function circle ( radius){
+      this.radius=radius;
+  }
+  circle.prototype.getrad = function()
+  {
+      //this.radius+5;
+return this.radius+5;
+  }
+
+  var s= new circle(5);
+  console.log(s.getrad());
+    </script>
+</body>
+</html>
